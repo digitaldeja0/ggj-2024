@@ -34,6 +34,7 @@ export class Preloader extends Scene
 
         this.load.image('logo', 'logo.png');
         this.load.image('main-menu-img', 'main-menu.png');
+        this.load.image('h2p', 'H2P.png');
         this.load.image('gameover-img', 'gameover.png');
 
         this.load.image('can', 'collect/can.png');
@@ -48,6 +49,49 @@ export class Preloader extends Scene
         this.load.image('tiles', 'rooms.png');
 
         this.load.tilemapTiledJSON("map", "rooms.tmj")
+
+        this.load.image('soundOn', 'on.png');
+        this.load.image('soundOff', 'off.png');
+        this.load.image('playJoke', 'playJoke.png');
+
+        this.load.audio('theme', [
+            'sound/240128 Rain at Dusk_01.mp3',
+        ]);
+
+        this.load.audio('menuTheme', [
+            'sound/240128 Slow Rainfall.mp3',
+        ]);
+
+        this.load.audio('laugh1', [
+            'sound/Big Laugh 02.wav',
+        ]);
+        this.load.audio('laugh2', [
+            'sound/Medium Laugh 01.wav',
+        ]);
+
+        this.load.audio('applause', [
+            'sound/Applause 01.wav',
+        ]);
+
+        this.load.audio('appliance1', [
+            'sound/Appliance 03.wav',
+        ]);
+
+        this.load.audio('appliance2', [
+            'sound/Appliance 02.wav',
+        ]);
+
+        this.load.audio('drink', [
+            'sound/Drinks 03.wav',
+        ]);
+
+        this.load.audio('bar', [
+            'sound/Bar Noise 04.wav',
+        ]);
+
+        this.load.audio('mic', [
+            'sound/Mic Feedback 01.wav',
+        ]);
 
     }
 
