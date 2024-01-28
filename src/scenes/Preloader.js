@@ -35,9 +35,19 @@ export class Preloader extends Scene
         this.load.image('logo', 'logo.png');
         this.load.image('main-menu-img', 'main-menu.png');
         this.load.image('gameover-img', 'gameover.png');
-        this.load.image('tiles', 'tiles.png');
 
-        this.load.tilemapTiledJSON("map", "map.tmj")
+        this.load.image('can', 'collect/can.png');
+        this.load.image('fly', 'collect/fly.png');
+        this.load.image('nana', 'collect/nana.png');
+        this.load.image('poop', 'collect/poop.png');
+        this.load.image('puddle', 'collect/puddle.png');
+        // this.load.image('tiles', 'tiles.png');
+
+        // this.load.tilemapTiledJSON("map", "map.tmj")
+
+        this.load.image('tiles', 'rooms.png');
+
+        this.load.tilemapTiledJSON("map", "rooms.tmj")
 
     }
 
