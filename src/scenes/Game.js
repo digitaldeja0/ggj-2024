@@ -243,6 +243,8 @@ export class Game extends Scene {
     );
 
     if (this.totalItems === 29) {
+      this.music.stop()
+
       this.scene.start("GameOver");
     }
 
@@ -321,6 +323,8 @@ export class Game extends Scene {
   }
 
   gameOver() {
+    this.music.stop()
+
     this.scene.start("GameOver");
   }
 
